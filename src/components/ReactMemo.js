@@ -1,8 +1,7 @@
 import React from "react";
 
 // React.memo prevents re-render if props don't change
-const TaskList = React.memo(({ todos }) => {
-  console.log("TaskList rendered");
+const ReactMemo = React.memo(({ todos }) => {
   return (
     <div>
       <h2>Todos:</h2>
@@ -15,4 +14,4 @@ const TaskList = React.memo(({ todos }) => {
   );
 });
 
-export default TaskList;
+export default ReactMemo;
